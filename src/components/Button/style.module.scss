@@ -1,0 +1,42 @@
+.button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  &:hover {
+    background: #e8e8e8;
+  }
+
+  > img {
+    width: 20px;
+  }
+
+  > span {
+    width: 100%;
+    text-align: left;
+    margin-left: 13px;
+  }
+
+  &__active {
+    > span {
+      color: var(--color-primary);
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: #ff6760;
+    border: 2px solid #f6f8fb;
+    border-radius: 999px;
+    color: #fff;
+    text-align: center;
+  }
+}

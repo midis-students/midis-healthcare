@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  align-items: center;
+
+  > img {
+    width: 48px;
+    margin: 0 24px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__body {
+    color: var(--color-primary);
+  }
+}

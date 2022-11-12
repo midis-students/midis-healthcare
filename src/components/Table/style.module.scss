@@ -1,0 +1,40 @@
+.table {
+  padding: 24px;
+  > h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  > table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .name {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    tr {
+      border-bottom: 1px solid #dbdde0;
+    }
+    td {
+      padding: 12px 0;
+    }
+
+    .td__buttons {
+      width: 48px;
+      display: flex;
+      align-items: center;
+      > button {
+        justify-content: center;
+      }
+    }
+
+    tbody {
+      color: #52575c;
+    }
+  }
+}
