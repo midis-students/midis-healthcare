@@ -70,7 +70,7 @@ export default function Navigation() {
       ref={ref}
       as="aside"
       className={classNames(style.navigation, collapse && style.navigation__collapse)}>
-      <img className={style.logo} src={collapse ? LogoMini : Logo} onClick={iconOnClick} />
+      <img className={style.logo} src={Logo} onClick={iconOnClick} />
       {collapse ? null : <Text as="h4">MEDICINE</Text>}
       <ul>
         {navs.map((nav) => (

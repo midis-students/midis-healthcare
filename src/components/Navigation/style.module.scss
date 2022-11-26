@@ -18,7 +18,10 @@
     padding: 0;
 
     > .logo {
-      width: 48px !important;
+      transition: all 500ms;
+      width: 150px !important;
+      transform: translateX(40%);
+      clip-path: polygon(0 0, 25% 0, 25% 100%, 0% 100%);
     }
   }
 

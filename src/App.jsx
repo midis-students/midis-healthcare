@@ -1,26 +1,13 @@
 import React from 'react';
 
-import Navigation from './components/Navigation';
-
-import DashboardPage from './pages/Dashboard';
+import Login from './pages/Login';
+import MainPage from './pages/Main';
+import { PageContext } from './store/page';
 
 function App() {
-  const [Page, setPage] = React.useState(<DashboardPage />);
+  const [Page, setPage] = React.useState(<MainPage />);
 
-  React.useEffect(() => {
-    
-    
-
-  }, []);
-
-  return (
-    <>
-      <Navigation />
-      <main>
-        <DashboardPage />
-      </main>
-    </>
-  );
+  return <PageContext.Provider value={{ Page, setPage }}>{Page}</PageContext.Provider>;
 }
 
 export default App;
